@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Trispace&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trispace', sans-serif;
+}
+
+.img-container{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    animation: animate 25s ease-in-out infinite;
+    background-size: cover;
+}
+
+.outer{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(28, 30, 25, 0.48);
+}
+
+.details{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.details h1{
+    font-size: 3rem;
+    color: #C5D8A4;
+    padding-bottom: 15px;
+}
+
+.details h2{
+    text-transform: capitalize;
+    color: #B2A4FF;
+}
+
+.details h2 span:nth-child(1){
+    color: #B2A4FF;
+}
+
+.details h2 span:nth-child(2){
+    color: #B2A4FF;
+}
+
+@keyframes animate{
+    0%,100%{
+        background-image: url(../media/3.png);
+    }
+    25%{
+        background-image: url(../media/6.png);
+    }
+    50%{
+        background-image: url(../media/5.png);
+    }
+    75%{
+        background-image: url(../media/4.png);
+    }
+    90%{
+        background-image: url(../media/7.png);
+    }
+}
+
+/* IMAGE SLIDERS ENDS */
+
+/* SHOP NOW BUTTON STARTS */
+
+.btn-container {
+    margin-top: 33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+   
+    text-decoration: none;
+    padding: 20px 50px;
+    font-size: 1.25rem;
+    position: relative;
+    margin: 32px;
+}
+
+
+.btn-1 {
+    background: #EBC7E8;
+    color: #293462;
+    border-radius: 30px;
+    transition: transform 0.3 ease;
+}
+
+.btn-1::after, .btn-1::before {
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    background: #FF87B2;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+
+.btn-1:hover {
+    transform: translate(-12px, -12px);
+}
+
+.btn-1:hover::after {
+    transform: translate(6px, 6px);
+}
+
+.btn-1:hover::before {
+    transform: translate(12px, 12px);
+}
+
+/* SHOP BUTTON ENDS */

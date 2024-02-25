@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Trispace&display=swap');
+:root{
+    --lavander:#856C8B;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trispace', sans-serif;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 65%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+/* BUTTON STARTS */
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: none;
+    border-radius: 3rem;
+    background: #939B62;
+    color: #FFD1D1;
+    padding: 1.5rem 2.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    background:var(--lavander);
+}
+
+/* BUTTON ENDS */
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #D9D7F1;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1 rem rgb(196, 153, 186);
+}
+
+header .logo{
+    font-size: 2.5rem;
+    color: #856C8B;
+    font-weight: bolder;
+}
+
+header .logo img{
+    float: inline-start;
+    width: 40px;
+}
+
+header .navbar a{
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 0 1.5rem;
+    color: #939B62;
+}
+
+header .navbar a:hover{
+    color:var(--lavander)
+}
+
+header .icons a{
+    font-size: 2.5rem;
+    color: #EA2C62;
+    margin-left: 1.5rem;
+}
+
+header .icons a:hover{
+    color:var(--lavander)
+}
+
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color: #939B62;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgb(105, 132, 116);
+    display: none;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../media/flower.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    max-width: 50rem;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    color: #EA2C62;
+}
+
+.home .content span{
+    font-size: 3.5rem;
+    color: var(--lavander);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.home .content p{
+    font-size: 3.5 rem;
+    color: #939B62;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*media queries*/
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    header {
+        padding: 2rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+
+    .home{
+        background-position: left;
+    }
+}
+
+@media (max-width:768px){
+    header .fa-bars{
+        display: block;  
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #FFD1D1;
+        border-top: .1rem solid rgb(66, 95, 87);
+        text-align: center;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #E9E5D6;
+        border: 1rem solid rgb(170, 139, 86);
+        display: block;
+    }
+
+    .home .content h3{
+        font-size: 5rem;
+    }
+
+    .home .content span{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+}
+
+

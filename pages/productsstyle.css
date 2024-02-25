@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Trispace&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trispace', sans-serif;
+}
+
+body{
+    background-color: #FFD6EC;
+}
+
+h1{
+    text-align: center;
+    color: #AAC4FF;
+    padding: 20px;
+}
+
+/* NAV BAR CSS STARTS */
+
+nav{
+    background-color: #ECC5FB;
+    display: grid;
+    place-items: center;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul a{
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: #000;
+    transition: 0.2s ease-in;
+    font-size: 18px;
+}
+
+nav ul a:hover{
+    background-color: #FFD8A9;
+    color: #850E35;
+}
+
+/* NAV BAR CSS ENDS */
+
+.items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px 60px;
+    padding-inline-end: 10px;
+    padding-inline-start: 100px;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.item img{
+    width: 75%;
+    height: 350px;
+    object-fit: cover;
+    cursor: pointer;
+    transform: 0.2s ease;
+}
+
+.items img:hover{
+    transform: scale(1.04);
+}
+
+.item h4{
+    width: 100%;
+    padding-top: 10px;
+    text-align: start
+}
+
+.item button{
+    padding: 8px 40px;
+    border: none;
+    outline: none;
+    background-color: #AAC4FF;
+    color: #850E35;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
+    display: block;
+    margin: 4px;
+    transition: 0.2s all;
+}
+
+.item button:hover{
+    transform: scale(1.08);
+}
+
+
+@media screen and (max-width: 1000px){
+    .items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

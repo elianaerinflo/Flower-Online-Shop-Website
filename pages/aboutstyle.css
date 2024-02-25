@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Shrikhand&family=Space+Mono&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trispace&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Shrikhand', cursive;
+}
+
+.abouterida-section{
+    width: 100%;
+    min-height: 100%;
+    background-color: #ddd;
+}
+
+.abouterida-container{
+    width: 80%;
+    display: inline;
+    margin: auto;
+    padding-top: 8%;
+}
+
+.content-section-erida{
+    float: left;
+    width: 100vh;
+    padding: 40px;
+}
+
+.image-section-erida{
+    float: right;
+    width: 40%;
+    padding-top: 10vh;
+}
+
+.image-section-erida img{
+    width: 85%;
+    height: 100%;
+}
+
+.content-section-erida .title-erida{
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #FFB9B9;
+}
+
+.content-section-erida .content-erida h3{
+    margin-top: 10px;
+    color: #B1AFFF;
+    font-size: 23px;
+    font-family: 'Cormorant', serif;
+}
+
+.content-section-erida .content-erida p{
+    margin-top: 10px;
+    font-family: 'Space Mono', monospace;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+
+.container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+h1{
+    text-align: center;
+    color: #AAC4FF;
+    padding: 20px;
+}
+
+
+/* NAV BAR CSS STARTS */
+
+nav{
+    background-color: #ECC5FB;
+    display: grid;
+    place-items: center;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul a{
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: #000;
+    transition: 0.2s ease-in;
+    font-size: 18px;
+}
+
+nav ul a:hover{
+    background-color: #FFD8A9;
+    color: #850E35;
+}
+
+/* NAV BAR CSS ENDS */
